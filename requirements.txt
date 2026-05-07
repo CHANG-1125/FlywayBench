@@ -1,0 +1,24 @@
+# FlywayBench — pinned packages used by training, graph build, GEE helper scripts, and plotting.
+# Generated from maintainer `python3 -m pip freeze` (2026-05-07); trim only unrelated desktop tools.
+#
+# Full snapshot of the same machine (372 packages): install with `pip install -r requirements-lock.txt`
+# (heavy; may conflict with your stack — prefer this file first.)
+#
+# If `torch` / `torch-geometric` wheels fail, install a CPU/GPU build from https://pytorch.org/ , then:
+#   pip install torch-geometric
+#   pip install -r requirements.txt
+
+numpy==2.2.6
+pandas==3.0.2
+pyarrow==22.0.0
+geopandas==1.1.3
+pyogrio==0.12.1
+pyproj==3.7.2
+shapely==2.1.2
+matplotlib==3.10.3
+scikit-learn==1.8.0
+scipy==1.15.3
+xgboost==3.0.2
+earthengine-api==1.7.22
+torch==2.8.0
+torch-geometric==2.7.0

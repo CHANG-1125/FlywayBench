@@ -1,0 +1,31 @@
+{
+  "n_nodes": 4554,
+  "n_species": 155,
+  "feature_columns": [
+    "NDVI_mean",
+    "LST_day_mean",
+    "DEM",
+    "water_frac",
+    "miss_NDVI",
+    "miss_LST",
+    "miss_DEM"
+  ],
+  "d_x": 7,
+  "imputation": {
+    "NDVI_LST": "median on train nodes (non-null); fallback global median if needed",
+    "DEM_na": "fill 0.0 (sea level)",
+    "indicators": "miss_NDVI, miss_LST, miss_DEM are 1 iff value was NaN before imputation"
+  },
+  "train_frac_for_impute_stats": 0.7,
+  "seed": 42,
+  "median_ndvi_train": 0.5714770483184755,
+  "median_lst_train": 17.994359274122836,
+  "n_miss_ndvi": 455,
+  "n_miss_lst": 468,
+  "n_miss_dem": 183,
+  "paths": {
+    "node_features": "graph_build/node_features_imputed_4554.csv",
+    "Y_wide": "graph_build/Y_binary_4554x155.csv",
+    "species_order": "graph_build/species_column_order.json"
+  }
+}

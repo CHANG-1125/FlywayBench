@@ -1,0 +1,4 @@
+model,n_seeds,n_species_eval_m5,macro_AUPRC_eval_m5,macro_AUCROC_eval_m5,win_tie_loss_vs_vanilla_species_auprc_eval_m5,auprc_eval_m5_one_sided_p_vs_vanilla,eval_domain_note
+FlywayGNN,30,73,0.319±0.006,0.695±0.007,47/0/26,0.037,phi_lt_tau_test_only_eval_m5_is_species_with_ge5_positives
+Vanilla_GCN,30,73,0.317±0.008,0.689±0.012,Baseline,,phi_lt_tau_test_only_eval_m5_is_species_with_ge5_positives
+XGBoost,30,73,0.293±0.003,0.667±0.003,-,,phi_lt_tau_test_only_eval_m5_is_species_with_ge5_positives

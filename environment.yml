@@ -1,0 +1,15 @@
+# Optional Conda bootstrap (conda not required). After creating the env, install Python deps with pip.
+#
+#   conda env create -f environment.yml
+#   conda activate flywaybench
+#   pip install -r requirements.txt
+#
+# PyTorch / PyTorch Geometric: if pip wheels fail on your platform, install torch from
+# https://pytorch.org/ inside this env, then `pip install torch-geometric` and `pip install -r requirements.txt`.
+
+name: flywaybench
+channels:
+  - conda-forge
+dependencies:
+  - python>=3.10,<3.14
+  - pip

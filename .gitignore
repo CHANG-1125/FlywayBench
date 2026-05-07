@@ -1,0 +1,45 @@
+# Bytecode / OS
+__pycache__/
+*.py[cod]
+.DS_Store
+
+# Local environments
+.micromamba/
+venv/
+.venv/
+.env/
+.env
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Train checkpoints (timestamp directories under flywaygnn_v1/runs/)
+flywaygnn_v1/runs/[0-9]*
+
+# Paper experiments: keep bundled snapshot only (add !rules when you publish more snapshots)
+flywaygnn_v1/runs/paper_experiments/*
+!flywaygnn_v1/runs/paper_experiments/20260419-173506/
+
+*.log
+
+# Large / regenerated CSV outputs
+*.csv
+!flywaygnn_v1/runs/paper_experiments/20260419-173506/tables/*.csv
+
+deduped_gridded/
+graph_build/figures/
+earth_engine/output/*
+!earth_engine/output/.gitkeep
+
+baseline_Y_static_*.csv
+c_hat_grid_species_year.csv
+grid_cells_active_baseline.csv
+stats_dedup_gridded_by_year.csv
+summary_baseline.csv
+graph_build/node_features_imputed_*.csv
+graph_build/Y_binary_*.csv
+
+*.pt
+*.pth
+flywaygnn_v1/bin/

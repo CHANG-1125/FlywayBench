@@ -1,0 +1,4 @@
+model,n_seeds,micro_F1,macro_F1,micro_AUPRC,macro_AUPRC,micro_AUROC,macro_AUROC,eval_domain_note
+FlywayGNN,30,0.212±0.005,0.114±0.003,0.122±0.002,0.152±0.003,0.616±0.007,—,phi_lt_tau_extrapolation
+Vanilla_GCN,30,0.211±0.004,0.112±0.003,0.122±0.002,0.151±0.004,0.619±0.010,—,phi_lt_tau_extrapolation
+XGBoost,30,0.209±0.002,0.116±0.001,0.116±0.001,0.139±0.001,0.585±0.002,—,phi_lt_tau_extrapolation

@@ -1,0 +1,3 @@
+# Micromamba 本地环境（体积大，勿提交）
+.micromamba/
+micromamba.tar.bz2
